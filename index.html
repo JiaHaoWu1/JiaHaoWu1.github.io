@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahao Wu - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-container">
+            <h1 class="logo">Jahao Wu</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h2>Hello, I'm Jahao Wu</h2>
+                <p>A passionate Computer Science student specializing in Software Development and Data Science.</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a final-year Computer Science student at the Technological University of the Shannon (TUS) with a strong interest in full-stack development, machine learning, and building distributed systems. I enjoy turning complex problems into elegant and efficient software solutions.
+                </p>
+                <!-- 在这里替换成你的头像图片链接 -->
+                <!-- <img src="images/your-avatar.jpg" alt="Jahao Wu" class="avatar"> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>Python, Java, SQL, JavaScript, HTML/CSS</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <p>Flask, Scikit-learn, Pandas, NumPy, JAX-RS (Jersey), Swing</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <p>Git, MySQL, HSQLDB, RESTful APIs, Docker, Linux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+
+            <!-- 项目 1: 天气系统 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Weather Data Visualization & Prediction System</h3>
+                    <p class="project-desc">A full-stack web application that fetches real-time weather data, uses a Machine Learning model (Random Forest) to predict short-term rainfall probability, and displays interactive visualizations.</p>
+                    <ul class="tech-list">
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>Scikit-learn</li>
+                        <li>MySQL</li>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                    <p class="highlight"><strong>Highlight:</strong> Achieved <strong>85%+ accuracy</strong> in rainfall prediction; Built end-to-end from data collection to web UI.</p>
+                    <!-- 替换成你的项目1的GitHub链接 -->
+                    <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+                <div class="project-image">
+                    <!-- 替换成你的项目1的截图链接 -->
+                    <img src="images/weather-project-screenshot.jpg" alt="Weather Project Screenshot" onclick="enlargeImage(this)">
+                    <p class="img-caption">(Click image to enlarge)</p>
+                </div>
+            </div>
+
+            <!-- 项目 2: 巧克力系统 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Distributed Chocolate Bar Management System</h3>
+                    <p class="project-desc">A distributed client-server application featuring a RESTful API built with Java JAX-RS and a responsive desktop GUI client using Swing for managing product data in an HSQLDB database.</p>
+                    <ul class="tech-list">
+                        <li>Java</li>
+                        <li>JAX-RS (Jersey)</li>
+                        <li>JAXB</li>
+                        <li>HSQLDB</li>
+                        <li>Java Swing</li>
+                    </ul>
+                    <p class="highlight"><strong>Highlight:</strong> Implemented full <strong>CRUD operations</strong> and <strong>transaction management</strong> across multiple database tables; Gained deep understanding of REST architecture and client-server communication.</p>
+                    <!-- 替换成你的项目2的GitHub链接 -->
+                    <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+                <div class="project-image">
+                    <!-- 替换成你的项目2的截图链接 -->
+                    <img src="images/java-project-screenshot.jpg" alt="Java Project Screenshot" onclick="enlargeImage(this)">
+                    <p class="img-caption">(Click image to enlarge)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm currently looking for graduate opportunities in software development. Feel free to reach out to me!</p>
+            <div class="contact-links">
+                <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2025 Jahao Wu. Made with &hearts; using HTML & CSS.</p>
+    </footer>
+
+    <!-- 图片放大模态框 -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
